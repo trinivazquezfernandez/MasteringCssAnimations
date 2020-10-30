@@ -1,0 +1,32 @@
+#top-container {
+  background: #3da1ff;
+  min-width: 925px;
+  padding: 230px 0;
+}
+
+#ladybug {
+  width: 252px; /*pixeles de ancho de una de las mariquitas*/
+  height: 205px; /*pixeles de alto de una de las mariquitas*/
+  margin: 2% auto;
+  background: url('../images/sprite.png') left center;
+  -webkit-animation: play 0.6s steps(12) infinite;
+  animation: play 0.6s steps(12) infinite;
+}
+
+@keyframes play {
+  0% {
+    background-position: -3024px; /*total de pixeles de la imagen en negativo*/
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@-webkit-keyframes play {
+  0% {
+    background-position: -3024px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
