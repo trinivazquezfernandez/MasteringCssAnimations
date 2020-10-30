@@ -5,7 +5,8 @@
 }
 
 #block {
-  margin: auto;
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   background: #fff url(../images/block.png) no-repeat 43px;
@@ -14,60 +15,32 @@
 }
 
 .animated {
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  animation-iteration-count: 3;
-  -webkit-animation-iteration-count: 3;
-  animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    width: 100px;
-    height: 100px;
+    margin: 0 auto;
   }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-    width: 200px;
-    height: 200px;
-  }
-  75% {
-    opacity: 0.5;
-  }
+
   100% {
-    opacity: 0;
-    width: 300px;
-    height: 300px;
+    opacity: 100;
+    margin: 100px auto;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    width: 100px;
-    height: 100px;
+    margin: 0 auto;
   }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-    width: 200px;
-    height: 200px;
-  }
-  90% {
-    opacity: 1;
-  }
+
   100% {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
+    opacity: 100;
+    margin: 100px auto;
   }
 }
